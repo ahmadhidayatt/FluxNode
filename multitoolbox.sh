@@ -540,7 +540,7 @@ function flux_daemon_bootstrap() {
 function install_node(){
 	echo -e "${GREEN}Module: Install FluxNode${NC}"
 	echo -e "${YELLOW}================================================================${NC}"
-	if [[ "$USER" == "ubuntu" || "$USER" == "admin" ]]; then
+	if [[ "$USER" == "ubuntu"  ]]; then
 		echo -e "${CYAN}You are currently logged in as ${GREEN}$USER${NC}"
 		echo -e "${CYAN}Please switch to the user account.${NC}"
 		echo -e "${YELLOW}================================================================${NC}"
