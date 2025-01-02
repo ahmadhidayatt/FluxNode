@@ -567,6 +567,7 @@ function install_node(){
 		exit
 	fi
 	bash -i <(curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/${ROOT_BRANCH}/install_pro.sh)
+	echo -e "curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/${ROOT_BRANCH}/install_pro.sh"
 }
 function install_docker(){
 	echo -e "${GREEN}Module: Install Docker${NC}"
