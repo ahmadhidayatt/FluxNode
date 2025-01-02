@@ -560,8 +560,9 @@ function install_node(){
 		echo -e "${WORNING}${CYAN}Docker is not working correct or is not installed.${NC}"
 		exit
 	fi
+	echo -e "curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/${ROOT_BRANCH}/install_pro.sh"	
 	bash -i <(curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/${ROOT_BRANCH}/install_pro.sh)
-	echo -e "curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/${ROOT_BRANCH}/install_pro.sh"
+
 }
 function install_docker(){
 	echo -e "${GREEN}Module: Install Docker${NC}"
