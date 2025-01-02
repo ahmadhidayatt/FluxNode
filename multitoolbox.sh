@@ -540,13 +540,7 @@ function flux_daemon_bootstrap() {
 function install_node(){
 	echo -e "${GREEN}Module: Install FluxNode${NC}"
 	echo -e "${YELLOW}================================================================${NC}"
-	if [[ "$USER" == "ubuntu"  ]]; then
-		echo -e "${CYAN}You are currently logged in as ${GREEN}$USER${NC}"
-		echo -e "${CYAN}Please switch to the user account.${NC}"
-		echo -e "${YELLOW}================================================================${NC}"
-		echo -e "${NC}"
-		exit
-	fi
+
 	
 	if [[ $(lsb_release -d) != *Debian* && $(lsb_release -d) != *Ubuntu* ]]; then
 		echo -e "${WORNING} ${CYAN}ERROR: ${RED}OS version $(lsb_release -si) not supported${NC}"
